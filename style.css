@@ -1,0 +1,31 @@
+:root {
+  --azul: #3366cc;
+  --cinza-texto: #555;
+}
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+ 
+/* cabeçalho */
+header {
+  text-align: center;
+  padding: 20px;
+}
+ 
+header h1 {
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+ 
+header p {
+  color: var(--cinza-texto);
+  font-style: italic;
+}
