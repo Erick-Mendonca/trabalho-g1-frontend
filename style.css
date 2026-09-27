@@ -29,3 +29,27 @@ header p {
   color: var(--cinza-texto);
   font-style: italic;
 }
+
+.busca {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.busca input {
+  padding: 8px;
+  border: 1px solid #999;
+  width: 200px;
+}
+ 
+.busca button {
+  padding: 8px 14px;
+  background-color: var(--azul);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+ 
+.busca button:hover {
+  background-color: #254b99;
+}
