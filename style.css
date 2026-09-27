@@ -53,3 +53,26 @@ header p {
 .busca button:hover {
   background-color: #254b99;
 }
+.idiomas {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+ 
+.card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+}
+ 
+.card a {
+  text-decoration: none;
+  color: #222;
+}
+ 
+.card p {
+  color: var(--cinza-texto);
+  font-size: 14px;
+}
+ 
