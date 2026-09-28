@@ -1,23 +1,27 @@
+
+/* ===== Variáveis: cores e fonte usadas em vários lugares ===== */
 :root {
   --link: #0645ad;
   --fonte-titulo: Georgia, "Times New Roman", serif;
   --azul: #3366cc;
   --cinza-texto: #555;
 }
- 
+ /* Zera as margens padrão do navegador e faz a largura incluir padding e borda */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+
+}/* Logo: display block + margin auto é o que centraliza uma imagem */
 .globo {
   display: block;
   width: 60px;
-  height: auto;
+  height: auto; /* mantém a proporção, sem distorcer */
   margin: 0 auto 10px;
 }
  
 body {
+  background-color: #f8f9fa;
   font-family: Arial, sans-serif;
   color: #222;
 }
@@ -25,9 +29,9 @@ body {
 /* cabeçalho */
 header {
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px 20px;
 }
- 
+ /* Seletor descendente: só o h1 que está dentro do header */
 header h1 {
   font-family: var(--fonte-titulo);
   font-size: 32px;
@@ -39,7 +43,7 @@ header p {
   color: var(--cinza-texto);
   font-style: italic;
 }
-
+/* ===Busca=== */
 .busca {
   display: flex;
   justify-content: center;
@@ -59,10 +63,10 @@ header p {
   border: none;
   cursor: pointer;
 }
- 
+ /* Pseudo-classe: escurece o botão quando o mouse passa por cima */
 .busca button:hover {
   background-color: #254b99;
-}
+}/* ===== Idiomas (mobile first: cards um embaixo do outro) ===== */
 .idiomas {
   display: flex;
   flex-direction: column;
@@ -77,7 +81,7 @@ header p {
 }
  
 .card a {
-  text-decoration: none;
+  text-decoration: none;/* tira o sublinhado padrão dos links */
   color: #222;
 }
  
@@ -85,15 +89,15 @@ header p {
   color: var(--cinza-texto);
   font-size: 14px;
 }
-
+/* Só o nome do idioma fica azul; o número de artigos continua cinza */
 .card a h3 {
   color: var(--link);
 }
-
+/* Sublinha o nome do idioma ao passar o mouse, como nos links da Wikipédia */
 .card a:hover h3 {
   text-decoration: underline;
 }
-
+/* ===== Rodapé ===== */
 footer {
   text-align: center;
   padding: 20px;
@@ -101,11 +105,11 @@ footer {
   color: var(--cinza-texto);
   font-size: 14px;
 }
-
+/* Personalização: seção "Sobre este clone", que não existe no site original */
 .sobre-mim {
   margin-top: 15px;
 }
-
+/* ===== Botão "Ler a Wikipédia em seu idioma" ===== */
 .ler-idiomas {
   text-align: center;
   padding: 10px 20px 30px;
@@ -122,16 +126,16 @@ footer {
 .ler-idiomas a:hover {
   background-color: #eaf3ff;
 }
-
+/* ===== Desktop (a partir de 768px) ===== */
 @media (min-width: 768px) {
   .idiomas {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: row;/* cards passam a ficar lado a lado */
+    flex-wrap: wrap;/* quando a linha enche, quebra para a de baixo */
     justify-content: center;
   }
 
   .card {
-    width: 22%;
+    width: 22%;/* 4 cards por linha */
     border: none;
   }
 }
