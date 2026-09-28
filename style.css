@@ -105,3 +105,16 @@ footer {
 .sobre-mim {
   margin-top: 15px;
 }
+
+@media (min-width: 768px) {
+  .idiomas {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 22%;
+    border: none;
+  }
+}
