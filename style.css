@@ -93,4 +93,15 @@ header p {
 .card a:hover h3 {
   text-decoration: underline;
 }
- 
+
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  color: var(--cinza-texto);
+  font-size: 14px;
+}
+
+.sobre-mim {
+  margin-top: 15px;
+}
