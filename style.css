@@ -1,4 +1,6 @@
 :root {
+  --link: #0645ad;
+  --fonte-titulo: Georgia, "Times New Roman", serif;
   --azul: #3366cc;
   --cinza-texto: #555;
 }
@@ -82,5 +84,13 @@ header p {
 .card p {
   color: var(--cinza-texto);
   font-size: 14px;
+}
+
+.card a h3 {
+  color: var(--link);
+}
+
+.card a:hover h3 {
+  text-decoration: underline;
 }
  
