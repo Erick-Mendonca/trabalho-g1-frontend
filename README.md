@@ -2,7 +2,7 @@ Trabalho G1 Front-End - Clone da Wikipédia
 
 Nomes: Gabriel Farezin Mello e Erick Gadini Mendonça
 
-Matrículas: 1139424 e 1139777
+RA: 1139424 e 1139777
 
 Site de referência: https://www.wikipedia.org
 
